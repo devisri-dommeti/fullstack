@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Layout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width  initial-scale=1" >
+    </head>
+    <style type="text/css">
+       body{
+        background-color: salmon;
+         
+          color:white;
+          font-size: 30px;
+         
+         
+       }
+    .c{
+           background-color: aquamarine;
+          padding: 2rem 0 2rem 0;
+          margin-top: 20px;
+          text-align: center;
+          display:flex;
+          flex-flow: column ;
+          }
+       .parent{
+         background-color: crimson;
+         padding: 2rem 0 2rem 0;
+         margin-top: 20px;
+         display:flex;
+         flex-flow: row wrap;
+       }
+       .child{
+          background-color: white;
+          height:50%;
+          width:10%;
+         justify-content: space-evenly;
+          margin:10px;
+          text-align: center;
+          padding-top: 10px;
+          color: black;
+          
+       }
+.parent>div:nth-child(1){
+    height: 100px;
+        width:25%;
+       }
+       .parent>div:nth-child(2){
+        height: 100px;
+        width:25%;}
+       .parent>div:nth-child(3){
+        height: 100px;
+        width:22%;
+        
+       }
+       .parent>div:nth-child(4){
+        height: 100px;
+        width:20%;
+       }
+       .parent>div:nth-child(5){
+    height: 100px;
+        width:25%;
+       }
+       .parent>div:nth-child(6){
+        height: 100px;
+        width:25%;}
+       .parent>div:nth-child(7){
+        height: 100px;
+        width:22%;
+        
+       }
+       .parent>div:nth-child(8){
+        height: 100px;
+        width:20%;
+       }
+       .c1{
+           background-color: aquamarine;
+          padding: 2rem 0 2rem 0;
+          margin-top: 20px;
+          text-align: center;
+          display:flex;
+          flex-flow: column ;
+       }  
+    </style>
+    <body>
+       
+           <div class="c">
+          
+                Header
+             </div>
+            
+             <div class="parent">
+            
+                <div class="child">Image</div>
+                <div class="child">Image</div>
+                <div class="child">Image</div>
+                <div class="child">Image</div>
+                <div class="child">Image</div>
+                <div class="child">Image</div>
+                <div class="child">Image</div>
+                <div class="child">Image</div>
+             </div> 
+             <div class="c1">
+          
+                Footer
+             </div>
+           
+
+           
+       
+    </body>
